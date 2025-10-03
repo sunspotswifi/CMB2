@@ -506,7 +506,7 @@ window.CMB2 = window.CMB2 || {};
 		cmb.media.$field.val('');
 		$cell.find('.cmb2-upload-file-id').val('');
 		$this.parents('.cmb2-media-status').html('');
-
+		cmb.trigger( 'cmb_media_modal_delete', cmb.media.field, cmb.media );
 		return false;
 	};
 
